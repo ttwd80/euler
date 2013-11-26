@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Euler Solutions - Problem 001</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css"
+	href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css"
+	th:href="#{url.bootstrap.css}" />
+</head>
+<body>
+	<h1>Euler Solutions - Problem 001</h1>
+	<div>
+		<div>If we list all the natural numbers below 10 that are
+			multiples of 4 or 5, we get 4, 5 and 8. The sum of these multiples is
+			17.</div>
+		<div>Find the sum of all the multiples of [a] or [b] below [c].</div>
+		<div>In the example [a]=4, [b]=[5] and [c]=10.</div>
+		<form class="form-inline" id="form">
+			<div class="form-group">
+				<label class="sr-only" for="a">a=</label> <input type="text"
+					class="form-control" id="a" placeholder="a" />
+			</div>
+			<div class="form-group">
+				<label class="sr-only" for="b">a=</label> <input type="text"
+					class="form-control" id="b" placeholder="b" />
+			</div>
+			<div class="form-group">
+				<label class="sr-only" for="c">a=</label> <input type="text"
+					class="form-control" id="c" placeholder="c" />
+			</div>
+			<div class="form-group">
+				<label class="sr-only" for="answer">answer=</label> <input
+					type="text" class="form-control" id="answer" placeholder="answer" />
+			</div>
+			<button id="submit" type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+
+	<script th:src="#{url.jquery.js}"
+		src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+	<script th:src="#{url.bootstrap.js}"
+		src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+	<script th:src="@{/resources/solution/001.js}"></script>
+</body>
+</html>
