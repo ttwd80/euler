@@ -6,11 +6,20 @@
 <title>Euler Solutions</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css"
+	href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css"
+	th:href="#{url.bootstrap.css}" />
+
 </head>
 <body>
 	<h1>Euler Solutions</h1>
 	<ul>
-		<li>Problem 001</li>
+		<li><a th:href="@{/solution/001}">Problem 001</a></li>
 	</ul>
+	<script th:src="#{url.jquery.js}"
+		src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+	<script th:src="#{url.bootstrap.js}"
+		src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+	<script th:src="@{/resources/solution/001.js}"></script>
 </body>
 </html>
