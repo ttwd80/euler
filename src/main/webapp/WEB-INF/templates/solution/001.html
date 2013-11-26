@@ -21,15 +21,15 @@
 		<form class="form-inline" id="form">
 			<div class="form-group">
 				<label class="sr-only" for="a">a=</label> <input type="text"
-					class="form-control" id="a" placeholder="a" />
+					value="4" class="form-control" id="a" placeholder="a" />
 			</div>
 			<div class="form-group">
 				<label class="sr-only" for="b">a=</label> <input type="text"
-					class="form-control" id="b" placeholder="b" />
+					value="5" class="form-control" id="b" placeholder="b" />
 			</div>
 			<div class="form-group">
 				<label class="sr-only" for="c">a=</label> <input type="text"
-					class="form-control" id="c" placeholder="c" />
+					value="10" class="form-control" id="c" placeholder="c" />
 			</div>
 			<div class="form-group">
 				<label class="sr-only" for="answer">answer=</label> <input
@@ -38,7 +38,14 @@
 			<button id="submit" type="submit" class="btn btn-default">Submit</button>
 		</form>
 	</div>
-
+	<div class="row">
+		<div class="col-md-4 col-md-offset-3">
+			<a th:href="@{/index}">Index</a>
+		</div>
+		<div class="col-md-4">
+			<a th:href="@{/solution/002}">Next: 002</a>
+		</div>
+	</div>
 	<script th:src="#{url.jquery.js}"
 		src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
 	<script th:src="#{url.bootstrap.js}"
